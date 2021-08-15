@@ -18,4 +18,6 @@ To use this template, run `react-static create` and use the `typescript` templat
 
 // this works in your React app
 import FancyDiv from '@components/FancyDiv'
+
+Hello world
 ```
