@@ -24,13 +24,13 @@ const Book = ({bookData}: BookProps) => {
       <div><img src={`http://covers.openlibrary.org/b/olid/${olid}-M.jpg`} alt="" /></div>
       <div>{title}</div>
       <div>{author.join(" & ")}</div>
-      <div>{publishDate.toDateString()}</div>
+      <div>{publishDate.toDateString().split(" ")[3]}</div>
       <div>{bookType[type]}</div>
       <Comment>
         <div>{comment}</div>
         <div>{rating[review]}</div>
       </Comment>
-      <div>{dateRead.toDateString()}</div>
+      <div>{dateRead.toDateString().slice(4)}</div>
     </Wrapper>
   )
 }
